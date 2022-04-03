@@ -11,8 +11,9 @@ function TodoList(props) {
         <div>
           {props.isDone ? <></>:
             <>
-              <Buttons variant="outline-success" onClick={props.markTodo} text="✓"/>{' '}
-              <Buttons variant="outline-danger" onClick={props.removeTodo} text="✕"/>
+              <Buttons variant="outline-success" onClick={props.markTodo} text="Done"/>{' '}
+              <Buttons variant="outline-danger" onClick={props.removeTodo} text="Delete"/>{' '}
+              <Buttons variant="outline-warning" onClick={props.editTodo} text="Edit"/>
             </>
           }
         </div>
